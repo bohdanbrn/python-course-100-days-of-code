@@ -23,9 +23,7 @@ while PLACEHOLDER_SYMBOL in display:
     if guess not in chosen_word:
         NUMBER_OF_LIVES -= 1
 
-        print(
-            f"You guessed {guess}, that's not in the word. You lose a life. {NUMBER_OF_LIVES} lives left."
-        )
+        print(f"You guessed {guess}, that's not in the word. You lose a life. {NUMBER_OF_LIVES} lives left.")
         display_current_state(stages, NUMBER_OF_LIVES)
 
         if NUMBER_OF_LIVES == 0:

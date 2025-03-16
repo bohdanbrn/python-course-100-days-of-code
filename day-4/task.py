@@ -1,32 +1,32 @@
 import random
 import sys
 
-rock = '''
+rock = """
     _______
 ---'   ____)
       (_____)
       (_____)
       (____)
 ---.__(___)
-'''
+"""
 
-paper = '''
+paper = """
     _______
 ---'   ____)____
           ______)
           _______)
          _______)
 ---.__________)
-'''
+"""
 
-scissors = '''
+scissors = """
     _______
 ---'   ____)____
           ______)
        __________)
       (____)
 ---.__(___)
-'''
+"""
 
 
 choices = [rock, paper, scissors]
@@ -37,7 +37,7 @@ except ValueError:
     print("Invalid input. Please enter 0, 1 or 2.")
     sys.exit()
 
-if (user_choice < 0 or user_choice > 2):
+if user_choice < 0 or user_choice > 2:
     print("Invalid choice. Please try again.")
     sys.exit()
 

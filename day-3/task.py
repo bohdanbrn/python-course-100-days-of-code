@@ -1,4 +1,5 @@
-print('''
+print(
+    '''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -21,15 +22,20 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 Welcome to Treasure Island.
 Your mission is to find the treasure.
-''')
+'''
+)
 
-answer1 = input("You're at a cross road. Where do you want to go? \n Type \"left\" or \"right\"\n")
+answer1 = input('You\'re at a cross road. Where do you want to go? \n Type "left" or "right"\n')
 
 if answer1 == "left":
-    answer2 = input("You've come to a lake. There is an island in the middle of the lake.\n Type \"wait\" to wait for a boat. Type \"swim\" to swim across.\n")
+    answer2 = input(
+        'You\'ve come to a lake. There is an island in the middle of the lake.\n Type "wait" to wait for a boat. Type "swim" to swim across.\n'
+    )
 
     if answer2 == "wait":
-        answer3 = input("You arrive at the island unharmed. There is a house with 3 doors.\n One \"red\", one \"yellow\" and one \"blue\". Which colour do you choose?\n")
+        answer3 = input(
+            'You arrive at the island unharmed. There is a house with 3 doors.\n One "red", one "yellow" and one "blue". Which colour do you choose?\n'
+        )
         if answer3 == "red":
             print("It's a room full of fire. Game Over.")
         elif answer3 == "yellow":
